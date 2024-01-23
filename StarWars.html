@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Figuras de Fortnite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="productoss.css">
+    <script src="productoss.js"></script>
+    <script src="carrito.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <div class="Encabezado-principal">
+            <a href="index.html">
+                <img src="imagenes/logo.jpg" alt="Logo de la tienda">
+            </a>
+            <div class="idioma">
+                <a href="#">Español</a> 
+                <a href="#">English</a>
+            </div>
+            <div class="titulo-principal">
+                <h1>BIENVENIDOS A MINI FIGURAS FORNITE</h1>
+            </div>
+            <div class="inicio">
+                <a href="index.html">Inicio</a> 
+            </div>
+            <div class="usuario">
+                <a href="login.html">Iniciar Sesión</a> 
+                <a href="register.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="Encabezado-secundario">
+        <div class="carrito">
+            <a href="carrito.html">Carrito de Compras</a>
+        </div>
+        <div class="rebajas">
+            <a href="rebajas.html">Rebajas</a>
+        </div>
+        <div class="ayuda">
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+        <div class="lista-deseos">
+            <a href="lista-deseos.html">Lista de Deseos</a>
+        </div>
+    </div>
+    <div class="buscador">
+        <input type="text" id="barraBusqueda" placeholder="Buscar por categoría">
+        <button onclick="buscar()">Buscar</button>
+    </div>
+
+    <div class="titulo-categorias">
+        <h2>Star Wars</h2>
+    </div>
+
+    <div class="productos-container">
+        <div class="producto">
+            <img src="imagenesfiguras/1.jpg" alt="Darth Vader">
+            <p>Darth Vader</p>
+            <p>Precio: 85.00€</p>
+            <button onclick="agregarAlCarrito('Darth Vader', 85.00, 1)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Darth Vader')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/2.jpg" alt="Boba Fett">
+            <p>Boba Fett</p>
+            <p>Precio: 85.00€</p>
+            <button onclick="agregarAlCarrito('Boba Fett', 85.00, 2)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Boba Fett')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/3.jpg" alt="Soldado Clon">
+            <p>Soldado Clon</p>
+            <p>Precio: 60.00€</p>
+            <button onclick="agregarAlCarrito('Soldado Clon', 60.00, 3)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Soldado Clon')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/4.jpg" alt="Rey">
+            <p>Rey</p>
+            <p>Precio: 65.00€</p>
+            <button onclick="agregarAlCarrito('Rey', 65.00, 4)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Rey')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/5.jpg" alt="Finn">
+            <p>Finn</p>
+            <p>Precio: 60.00€</p>
+            <button onclick="agregarAlCarrito('Finn', 60.00, 5)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Finn')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/6.jpg" alt="Ahsoka Tano">
+            <p>Ahsoka Tano</p>
+            <p>Precio: 60.00€</p>
+            <button onclick="agregarAlCarrito('Ahsoka Tano', 60.00, 6)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Ahsoka Tano')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/7.jpg" alt="Anakin Skywalker">
+            <p>Anakin Skywalker</p>
+            <p>Precio: 75.00€</p>
+            <button onclick="agregarAlCarrito('Anakin Skywalker', 75.00, 7)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Anakin Skywalker')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/8.jpg" alt="Obi-Wan Kenobi">
+            <p>Obi-Wan Kenobi</p>
+            <p>Precio: 75.00€</p>
+            <button onclick="agregarAlCarrito('Obi-Wan Kenobi', 75.00, 8)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Obi-Wan Kenobi')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/9.jpg" alt="Kylo Ren">
+            <p>Kylo Ren</p>
+            <p>Precio: 70.00€</p>
+            <button onclick="agregarAlCarrito('Kylo Ren', 70.00, 9)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Kylo Ren')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/10.jpg" alt="Darth Maul">
+            <p>Darth Maul</p>
+            <p>Precio: 70.00€</p>
+            <button onclick="agregarAlCarrito('Darth Maul', 70.00, 10)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Darth Maul')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/11.jpg" alt="Luke Skywalker">
+            <p>Luke Skywalker</p>
+            <p>Precio: 75.00€</p>
+            <button onclick="agregarAlCarrito('Luke Skywalker', 75.00, 11)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Luke Skywalker')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/12.jpg" alt="Leia Organa">
+            <p>Leia Organa</p>
+            <p>Precio: 65.00€</p>
+            <button onclick="agregarAlCarrito('Leia Organa', 65.00, 12)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Leia Organa')">Agregar a Favoritos</button>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="footer-column">
+            <div class="logo">
+               <img id="logo-footer" src="imagenes/logo.jpg" alt="Logo de la tienda">
+            </div>
+            <a href="figura.php">Pide tu figura</a>
+            <a href="catalogo.html">Catálogo</a>
+        </div>
+    
+        <div class="footer-column">
+            <h4>QUIÉNES SOMOS</h4>
+            <a href="quienessomos.html">FORNITE®MinifigurasAction</a>
+        </div>
+    
+        <div class="footer-column">
+            <h4>ATENCIÓN AL CLIENTE</h4>
+            <a href="ayuda.html">Ponte en contacto con nosotros</a>
+            <a href="ayuda.html">Envíos y devoluciones</a>
+            <a href="ayuda.html">Métodos de pago</a>
+        </div>
+    
+        <div class="social-icon">
+            <h4>SÍGUENOS</h4>
+     
+            <a href="https://www.facebook.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+ 
+            <a href="https://twitter.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+   
+            <a href="https://www.instagram.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+         
+            <a href="https://wa.me/tunumerodetelefono" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+      
+            <a href="https://www.tiktok.com/@tu_usuario" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+      
+            <a href="https://www.epicgames.com/fortnite" target="_blank" class="social-icon"><i class="fab fa-fort-awesome"></i></a>
+          
+        </div>
+
+    
+    </footer>
+    <nav class="enlaces-adicionales">
+        <a href="ayuda.html" class="footer-link">Política de privacidad</a>
+        <a href="ayuda.html"class="footer-link">Cookies</a>
+        <a href="ayuda.html"footer-link">Aviso legal</a>
+        <a href="ayuda.html" class="footer-link">Cláusulas de uso</a>
+        <a href="ayuda.html" class="footer-link">Accesibilidad</a>
+        <a href="ayuda.html" class="footer-link">Configuración de cookies</a>
+      </nav>
+
+      <div class="footer-texto">
+        <p>FORNITE®MinifigurasAction, España. Solo se permite la compra en línea a personas mayores de 18 años. FORNITE®MinifigurasAction, figuras de acción, es una marca privada creada por un fan de FORNITE. Todos los derechos reservados. FORNITE®MinifigurasAction fue creada con fines de estudio, como proyecto para MSMK university. El uso de este sitio supone la aceptación de las cláusulas de uso. FORNITE®Minifiguras</p>
+    </div>
+
+    <script src="productoss.js"></script>
+    <script src="carrito.js"></script>
+    <script src="carrusel.js"></script>
+</body>
+</html>

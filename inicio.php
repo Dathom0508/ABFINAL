@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (isset($_SESSION['user_id']) && isset($_SESSION['user_name']) && isset($_SESSION['is_admin'])) {
+    $user_name = $_SESSION['user_name'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,27 +16,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
 </head>
 <body>
-    <header>
-        <div class="Encabezado-principal">
-            <a href="index.html">
-                <img src="imagenes/logo.jpg" alt="Logo de la tienda">
-            </a>
-            <div class="idioma">
-                <a href="#">Español</a> 
-                <a href="#">English</a>
-            </div>
-            <div class="titulo-principal">
-                <h1>BIENVENIDOS A MINI FIGURAS FORNITE</h1>
-            </div>
-            <div class="inicio">
-                <a href="index.html">Inicio</a> 
-            </div>
-            <div class="usuario">
-                <a href="login.php">Iniciar Sesión</a> 
-                <a href="register.php">Registrarse</a>
-            </div>
+<header>
+    <div class="Encabezado-principal">
+        <a href="index.html">
+            <img src="imagenes/logo.jpg" alt="Logo de la tienda">
+        </a>
+        <div class="idioma">
+            <a href="#">Español</a> 
+            <a href="#">English</a>
         </div>
-    </header>
+        <div class="titulo-principal">
+            <h1>BIENVENIDOS A MINI FIGURAS FORNITE</h1>
+        </div>
+        <div class="inicio">
+            <a href="index.html">Inicio</a> 
+        </div>
+        <div class="usuario">
+            <?php
+            if (isset($_SESSION['user_id']) && isset($_SESSION['user_name']) && isset($_SESSION['is_admin'])) {
+                $user_name = $_SESSION['user_name'];
+                echo " $user_name!";
+
+                if ($_SESSION['is_admin']) {
+                    echo '<a href="pide.php">Administración</a>'; 
+                    echo '<a href="index.html">Salir</a>';
+                } else {
+                    echo '<a href="index.html">Cerrar sesión</a>';
+                }
+            } else {
+
+            }
+            ?>
+        </div>
+    </div>
+</header>
+
 
     <div class="Encabezado-secundario">
         <div class="carrito">
@@ -229,7 +251,7 @@
             <div class="logo">
                <img id="logo-footer" src="imagenes/logo.jpg" alt="Logo de la tienda">
             </div>
-            <a href="login.php">Pide tu figura</a>
+            <a href="realizarpedido.php">Pide tu figura</a>
             <a href="catalogo.html">Catálogo</a>
         </div>
     

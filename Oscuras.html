@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Figuras de Fortnite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="productoss.css">
+    <script src="productoss.js"></script>
+    <script src="carrito.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <div class="Encabezado-principal">
+            <a href="index.html">
+                <img src="imagenes/logo.jpg" alt="Logo de la tienda">
+            </a>
+            <div class="idioma">
+                <a href="#">Español</a> 
+                <a href="#">English</a>
+            </div>
+            <div class="titulo-principal">
+                <h1>BIENVENIDOS A MINI FIGURAS FORNITE</h1>
+            </div>
+            <div class="inicio">
+                <a href="index.html">Inicio</a> 
+            </div>
+            <div class="usuario">
+                <a href="login.html">Iniciar Sesión</a> 
+                <a href="register.html">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="Encabezado-secundario">
+        <div class="carrito">
+            <a href="carrito.html">Carrito de Compras</a>
+        </div>
+        <div class="rebajas">
+            <a href="rebajas.html">Rebajas</a>
+        </div>
+        <div class="ayuda">
+            <a href="ayuda.html">Ayuda</a>
+        </div>
+        <div class="lista-deseos">
+            <a href="lista-deseos.html">Lista de Deseos</a>
+        </div>
+    </div>
+    <div class="buscador">
+        <input type="text" id="barraBusqueda" placeholder="Buscar por categoría">
+        <button onclick="buscar()">Buscar</button>
+    </div>
+
+    <div class="titulo-categorias">
+        <h2>Oscuras</h2>
+    </div>
+
+    <div class="productos-container">
+        <div class="producto">
+            <img src="imagenesfiguras/123.jpg " alt="Producto 13">
+            <p>Iron Man</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Iron Man', 25.00, 13)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Iron Man')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/124.jpg " alt="Producto 14">
+            <p>Producto 2</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 2', 25.00, 14)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 2')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/125.jpg " alt="Producto 15">
+            <p>Producto 3</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 3', 25.00, 15)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 3')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/126.jpg " alt="Producto 16">
+            <p>Producto 4</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 4', 25.00, 16)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 4')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/127.jpg " alt="Producto 17">
+            <p>Producto 5</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 5', 25.00, 17)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 5')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src=" imagenesfiguras/128.jpg" alt="Producto 18">
+            <p>Producto 6</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 6', 25.00, 18)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 6')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/129.jpg " alt="Producto 19">
+            <p>Producto 7</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 7', 25.00, 19)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 7')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/130.jpg " alt="Producto 20">
+            <p>Producto 8</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 8', 25.00, 20)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 8')">Agregar a Favoritos</button>
+        </div>
+        <div class="producto">
+            <img src="imagenesfiguras/131.jpg " alt="Producto 21">
+            <p>Producto 9</p>
+            <p>Precio: €25.00</p>
+            <button onclick="agregarAlCarrito('Producto 9', 25.00, 21)">Agregar al Carrito</button>
+            <button onclick="agregarAFavoritos('Producto 9')">Agregar a Favoritos</button>
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="footer-column">
+            <div class="logo">
+               <img id="logo-footer" src="imagenes/logo.jpg" alt="Logo de la tienda">
+            </div>
+            <a href="figura.php">Pide tu figura</a>
+            <a href="catalogo.html">Catálogo</a>
+        </div>
+    
+        <div class="footer-column">
+            <h4>QUIÉNES SOMOS</h4>
+            <a href="quienessomos.html">FORNITE®MinifigurasAction</a>
+        </div>
+    
+        <div class="footer-column">
+            <h4>ATENCIÓN AL CLIENTE</h4>
+            <a href="ayuda.html">Ponte en contacto con nosotros</a>
+            <a href="ayuda.html">Envíos y devoluciones</a>
+            <a href="ayuda.html">Métodos de pago</a>
+        </div>
+    
+        <div class="social-icon">
+            <h4>SÍGUENOS</h4>
+     
+            <a href="https://www.facebook.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+ 
+            <a href="https://twitter.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+   
+            <a href="https://www.instagram.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+         
+            <a href="https://wa.me/tunumerodetelefono" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+      
+            <a href="https://www.tiktok.com/@tu_usuario" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+      
+            <a href="https://www.epicgames.com/fortnite" target="_blank" class="social-icon"><i class="fab fa-fort-awesome"></i></a>
+          
+        </div>
+
+    
+    </footer>
+    <nav class="enlaces-adicionales">
+        <a href="ayuda.html" class="footer-link">Política de privacidad</a>
+        <a href="ayuda.html"class="footer-link">Cookies</a>
+        <a href="ayuda.html"footer-link">Aviso legal</a>
+        <a href="ayuda.html" class="footer-link">Cláusulas de uso</a>
+        <a href="ayuda.html" class="footer-link">Accesibilidad</a>
+        <a href="ayuda.html" class="footer-link">Configuración de cookies</a>
+      </nav>
+
+      <div class="footer-texto">
+        <p>FORNITE®MinifigurasAction, España. Solo se permite la compra en línea a personas mayores de 18 años. FORNITE®MinifigurasAction, figuras de acción, es una marca privada creada por un fan de FORNITE. Todos los derechos reservados. FORNITE®MinifigurasAction fue creada con fines de estudio, como proyecto para MSMK university. El uso de este sitio supone la aceptación de las cláusulas de uso. FORNITE®Minifiguras</p>
+    </div>
+
+    <script src="productoss.js"></script>
+    <script src="carrito.js"></script>
+    <script src="carrusel.js"></script>
+</body>
+</html>

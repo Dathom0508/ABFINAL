@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="ayuda.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <header>
+            <div class="Encabezado-principal">
+                <a href="index.html">
+                    <img src="imagenes/logo.jpg" alt="Logo de la tienda">
+                </a>
+                <div class="idioma">
+                    <a href="#">Español</a> 
+                    <a href="#">English</a>
+                </div>
+                <div class="titulo-principal">
+                    <h1>BIENVENIDOS A MINI FIGURAS FORNITE</h1>
+                </div>
+                <div class="inicio">
+                    <a href="index.html">Inicio</a> 
+                </div>
+                <div class="usuario">
+                    <a href="login.html">Iniciar Sesión</a> 
+                    <a href="register.html">Registrarse</a>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <section class="ayudas">
+                <h1>Ponte en Contacto con Nosotros</h1>
+                <p>¡Estamos aquí para ayudarte! Si tienes alguna pregunta, comentario o inquietud, no dudes en ponerte en contacto con nuestro equipo de soporte.</p>
+                <p>Envíanos un correo electrónico a <a href="mailto:davidli@msmk.university?subject=Consulta%20de%20ayuda">davidli@msmk.university</a> o utiliza nuestro formulario de contacto.</p>                
+            </section>
+            <section class="ayudas">
+                <h1>Envíos y Devoluciones</h1>
+                <p>Realizamos envíos a todo el mundo. Los plazos de entrega pueden variar según la ubicación y la disponibilidad del producto. Para obtener información detallada sobre envíos, consulta nuestra sección de <a href="javascript:void(0)" onclick="mostrarContenido('envios')">Envíos</a>.</p>
+                <div id="envios" style="display: none;">
+                    <p>Nuestros envíos son rápidos y confiables. Ofrecemos opciones de envío estándar y express para que puedas elegir la que mejor se adapte a tus necesidades. Además, todos los envíos son rastreables, para que puedas seguir el progreso de tu pedido en tiempo real.</p>
+                    <p>Los tiempos de entrega estándar suelen ser de 3 a 5 días hábiles, mientras que las opciones express pueden ofrecer entregas en 1-2 días hábiles.</p>
+                </div>
+        
+                <p>Si necesitas realizar una devolución, por favor, revisa nuestra política de <a href="javascript:void(0)" onclick="mostrarContenido('devoluciones')">Devoluciones</a> para obtener instrucciones detalladas.</p>
+                <div id="devoluciones" style="display: none;">
+                    <p>Aceptamos devoluciones dentro de los 30 días posteriores a la recepción del producto. Si no estás satisfecho con tu compra, ponte en contacto con nuestro equipo de atención al cliente. Procesaremos tu devolución y te proporcionaremos una etiqueta de envío de devolución.</p>
+                    <p>Una vez que recibamos el producto devuelto, te reembolsaremos el monto total de la compra o te ofreceremos un crédito para tu próximo pedido. Queremos asegurarnos de que estés completamente satisfecho con tu experiencia de compra.</p>
+                </div>
+            </section>
+            <section class="ayudas">
+                <h1>Métodos de Pago</h1>
+                <p>Aceptamos una variedad de métodos de pago para que puedas realizar tus compras de manera conveniente y segura. Aquí tienes información detallada sobre nuestros <a href="javascript:void(0)" onclick="mostrarContenido('metodosPago')">Métodos de Pago</a>.</p>
+                <div id="metodosPago" style="display: none;">
+                    <h2>Tarjetas de Crédito y Débito</h2>
+                    <p>Aceptamos todas las principales tarjetas de crédito y débito, incluyendo Visa, MasterCard, American Express y más. Puedes ingresar la información de tu tarjeta de manera segura durante el proceso de pago.</p>
+            
+                    <h2>PayPal</h2>
+                    <p>Ofrecemos la opción de pago a través de PayPal, una plataforma segura y confiable. Simplemente elige PayPal como tu método de pago durante el proceso de compra y sigue las instrucciones para completar la transacción.</p>
+            
+                    <h2>Transferencia Bancaria</h2>
+                    <p>Si prefieres realizar una transferencia bancaria, proporcionamos los detalles bancarios necesarios al finalizar la compra. Ten en cuenta que este método puede llevar más tiempo para procesarse.</p>
+            
+                    <h2>Pagos en Efectivo (Disponible Localmente)</h2>
+                    <p>Para clientes locales, ofrecemos la opción de pago en efectivo al momento de la entrega. Esta opción está disponible en determinadas áreas geográficas y puede estar sujeta a restricciones.</p>
+                </div>
+            </main>
+
+   
+            <footer>
+
+                <div class="footer-column">
+                    <div class="logo">
+                       <img id="logo-footer" src="imagenes/logo.jpg" alt="Logo de la tienda">
+                    </div>
+                    <a href="figura.php">Pide tu figura</a>
+                    <a href="catalogo.html">Catálogo</a>
+                </div>
+            
+                <div class="footer-column">
+                    <h4>QUIÉNES SOMOS</h4>
+                    <a href="quienessomos.html">FORNITE®MinifigurasAction</a>
+                </div>
+            
+                <div class="footer-column">
+                    <h4>ATENCIÓN AL CLIENTE</h4>
+                    <a href="ayuda.html">Ponte en contacto con nosotros</a>
+                    <a href="ayuda.html">Envíos y devoluciones</a>
+                    <a href="ayuda.html">Métodos de pago</a>
+                </div>
+            
+                <div class="social-icon">
+                    <h4>SÍGUENOS</h4>
+             
+                    <a href="https://www.facebook.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+         
+                    <a href="https://twitter.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+           
+                    <a href="https://www.instagram.com/tu_pagina" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                 
+                    <a href="https://wa.me/tunumerodetelefono" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+              
+                    <a href="https://www.tiktok.com/@tu_usuario" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+              
+                    <a href="https://www.epicgames.com/fortnite" target="_blank" class="social-icon"><i class="fab fa-fort-awesome"></i></a>
+                  
+                </div>
+        
+            
+            </footer>
+            <nav class="enlaces-adicionales">
+                <a href="ayuda.html" class="footer-link">Política de privacidad</a>
+                <a href="ayuda.html"class="footer-link">Cookies</a>
+                <a href="ayuda.html"footer-link">Aviso legal</a>
+                <a href="ayuda.html" class="footer-link">Cláusulas de uso</a>
+                <a href="ayuda.html" class="footer-link">Accesibilidad</a>
+                <a href="ayuda.html" class="footer-link">Configuración de cookies</a>
+              </nav>
+        
+              <div class="footer-texto">
+                <p>FORNITE®MinifigurasAction, España. Solo se permite la compra en línea a personas mayores de 18 años. FORNITE®MinifigurasAction, figuras de acción, es una marca privada creada por un fan de FORNITE. Todos los derechos reservados. FORNITE®MinifigurasAction fue creada con fines de estudio, como proyecto para MSMK university. El uso de este sitio supone la aceptación de las cláusulas de uso. FORNITE®Minifiguras</p>
+            </div>
+        
+            <script src="productoss.js"></script>
+            <script src="carrito.js"></script>
+            <script src="carrusel.js"></script>
+        </body>
+        </html>

@@ -1,0 +1,35 @@
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.producto {
+    text-align: center;
+    margin: 20px;
+}
+
+.producto img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.producto img:hover {
+    transform: scale(1.2); 
+    border: 2px solid #ffffff;
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+}
+
+footer {
+
+    margin-top: 5%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
